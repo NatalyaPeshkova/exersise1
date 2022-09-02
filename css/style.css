@@ -8,18 +8,49 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(12, auto);
+  grid-template-columns: repeat(36, 28px);
   grid-template-rows: repeat(8, auto);
+  justify-content: center;
 }
 .container__item {
   border-radius: 5px;
   margin: 0.1em;
   background-color: #6de8e6;
-  height: 1em;
-  width: 1em;
+  height: 26px;
+  width: 26px;
   transition: transform 1s;
 }
 .container__item:hover {
   transform: rotate(360deg);
-  background-color: #96ded1;
+  background-color: #B0E0E6;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(24, 28px);
+    grid-template-rows: repeat(12, auto);
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: repeat(16, 28px);
+    grid-template-rows: repeat(18, auto);
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: repeat(12, 28px);
+    grid-template-rows: repeat(24, auto);
+  }
+}
+@media screen and (max-width: 350px) {
+  .container {
+    grid-template-columns: repeat(8, 28px);
+    grid-template-rows: repeat(36, auto);
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
