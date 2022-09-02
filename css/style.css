@@ -1,0 +1,25 @@
+.wrapper {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+  grid-template-rows: repeat(8, auto);
+}
+.container__item {
+  border-radius: 5px;
+  margin: 0.1em;
+  background-color: #6de8e6;
+  height: 1em;
+  width: 1em;
+  transition: transform 1s;
+}
+.container__item:hover {
+  transform: rotate(360deg);
+  background-color: #96ded1;
+}/*# sourceMappingURL=style.css.map */
